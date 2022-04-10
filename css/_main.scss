@@ -1,0 +1,214 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 1170px;
+}
+header {
+  font-family: "Exo 2", sans-serif;
+}
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: $header-color;
+  padding: 6px 24px;
+  border-radius: 0 0 6px 6px;
+  font-weight: 600;
+}
+.header-info__city,
+.phone,
+.email {
+  padding-left: 24px;
+}
+.header-info__city {
+  background: url(/img/city-icon.png) 0 0 no-repeat;
+  background-size: 20px 20px;
+}
+.header-info__contacts a {
+  color: black;
+}
+.header-info__contacts .phone {
+  background: url(/img/phone-icon.png) 0 0 no-repeat;
+  background-size: 16px 16px;
+  padding-right: 12px;
+}
+.header-info__contacts .email {
+  background: url(/img/email-icon.png) 0 0 no-repeat;
+  background-size: 20px 20px;
+}
+.header-nav {
+  padding: 24px;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border-radius: 50%;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  padding-top: 20px;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  & a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $nav-color;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  & li {
+    list-style: none;
+    padding-right: 56px;
+  }
+}
+.nav-wrapper__btn .btn {
+  background-color: $main-theme-color;
+  & a {
+    color: white;
+    text-transform: uppercase;
+  }
+}
+main {
+  & .container {
+    background: url("/img/background-truck.png") 644px -24px no-repeat;
+    padding: 32px;
+  }
+  & h1 {
+    font-weight: 700;
+    letter-spacing: 3px;
+    width: auto;
+    max-width: 800px !important;
+  }
+  & .row {
+    margin: 0;
+  }
+  & .row > * {
+    padding: 0;
+  }
+}
+.offer__opportunities {
+  margin-top: 80px;
+  & .col-3 {
+    border: solid 3px $yellow;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    padding: 24px;
+  }
+  & .weight {
+    background: url(/img/weight-icon.png) 24px 24px no-repeat;
+    background-size: 50px 50px;
+    padding-left: 85px;
+  }
+  & .express {
+    background: url(/img/express-delivery-icon.png) 24px 24px no-repeat;
+    background-size: 50px 50px;
+    padding-left: 85px;
+  }
+  & .contract {
+    background: url(/img/contract-icon.png) 24px 36px no-repeat;
+    background-size: 50px 50px;
+    padding-left: 85px;
+  }
+  & .dop-weight {
+    background: url(/img/dop-weight-icon.png) 24px 36px no-repeat;
+    background-size: 50px 50px;
+    padding-left: 85px;
+  }
+}
+.services {
+  max-width: 120px;
+  border-bottom: solid 3px $yellow;
+}
+.services__tabs {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+#services {
+  display: flex;
+}
+.tab-btn {
+  font-size: 16px;
+  display: flex;
+  background-color: $main-theme-color;
+  padding: 24px;
+  padding-left: 64px;
+  color: white;
+  border: solid white;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  &.spb {
+    background-image: url(/img/spb2-icon.png);
+    background-position: 24px 28px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  } 
+  &.msk {
+    background-image: url(/img/msk2-icon.png);
+    background-position: 24px 28px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  } 
+  &.ru {
+    background-image: url(/img/ru2-icon.png);
+    background-position: 24px 28px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  } 
+  &.dop {
+    background-image: url(/img/dop-icon.png);
+    background-position: 24px 28px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  }
+}
+.tab-btn.active {
+  background-color: $header-color;
+  color: black;
+  &.spb {
+    background-image: url(/img/spb-icon.png);
+    background-position: 24px 28px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  } 
+  &.msk {
+    background-image: url(/img/msk-icon.png);
+    background-position: 24px 28px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  } 
+  &.ru {
+    background-image: url(/img/ru-icon.png);
+    background-position: 24px 28px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  }
+  &.dop {
+    background-image: url(/img/dop-weight-icon.png);
+    background-position: 24px 28px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  }
+}
+#contents {
+  background-color: $header-color;
+  padding: 24px;
+  border: solid white;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}
